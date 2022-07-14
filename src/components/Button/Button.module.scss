@@ -1,0 +1,33 @@
+.more-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: center;
+    cursor: pointer;
+    color: var(--white);
+    background: rgba(0, 0, 0, 0.5);
+    width: 20;
+    height: 35px;
+    border-radius: 4px;
+    z-index: 20;
+
+    &:hover {
+    background: rgba(0, 0, 0, 0.65);
+    }
+}
+
+
+// Custom swiper button
+.swiperPrev {
+    left: 30px;
+}
+
+.swiperNext {
+    right: 30px;
+}
+
+.isPoster {
+    width: 40px;
+    height: 70px;
+}
+
