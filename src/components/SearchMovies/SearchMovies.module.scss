@@ -1,0 +1,60 @@
+.search-pane {
+    width: 100%;
+    min-height: 90vh;
+    padding-top: 60px; 
+    background: var(--background);
+    transition: all 0.3s linear;
+    
+    .search-content {
+        display: grid;
+        grid-gap: 8px;
+        margin: 40px 60px 0;
+    
+        &:hover .search-item {
+            opacity: 0.7;
+        }
+    
+        .search-item {
+            position: relative;
+            max-width: 400px;
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+            margin: 20px 0;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s linear;
+        
+            &:hover {
+                transform: scale(1.2);
+                z-index: 10;
+                opacity: 1;
+            }
+
+            .search-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            
+            }
+            
+            .search-title {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                text-align: center;
+                padding: 4px;
+                background: rgba(0, 0, 0, 0.5);
+                color: var(--white);
+                font-weight: bold;
+            }            
+        }
+    }
+
+    .search-notfound {
+        padding: 4rem 6rem;
+        color: var(--white);
+    }
+}
+

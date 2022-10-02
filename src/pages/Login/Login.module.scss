@@ -1,0 +1,89 @@
+.login-screen {
+    position: relative;
+    height: 100%;
+    background: url("https://fpttruyenhinh.net.vn/wp-content/uploads/2020/08/Netflix-banner-1024x576.png") center no-repeat;
+    background-size: cover;
+}
+
+.login-background {
+ 
+}
+
+.login-logo {
+    position: fixed;
+    left: 0;
+    top: 20px;
+    width: 130px;
+    object-fit: contain;
+    padding-left: 20px;
+}
+
+.login-btn {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    color: var(--white);
+    border-radius: 4px;
+    background: var(--primary);
+    cursor: pointer;
+}
+
+.login-gradient {
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    background: linear-gradient(to top, 
+    rgba(0,0,0,0.8) 0,
+    rgba(0,0,0,0) 60%, 
+    rgba(0,0,0,0.8) 100%);
+}
+
+.login_body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+    color: var(--white);
+    padding: 20px;
+
+    > h1 {
+        font-size: 3.125rem;
+        margin-bottom: 10px;
+    }
+
+    > h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    > h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+}
+
+.login-input {
+    margin-top: 20px;
+}
+
+.login-input > form > input {
+    padding: 20px;
+    height: 31px;
+    max-width: 600px;
+    width: 60%;
+}
+
+.login-getStarted {
+    padding: 10px 20px;
+    height: 40px;
+    font-size: 1rem;
+    color: var(--white);
+    background: var(--primary);
+    font-weight: 600;
+    cursor: pointer;
+}
